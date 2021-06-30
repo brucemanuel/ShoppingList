@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: #E6DADA;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #274046,   #E6DADA);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #274046,           #E6DADA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    color: white;
+    min-height: 100vh;
+  }
+  
+  .head, form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 20vh;
+  }
+  
+  .input-field, .add-btn {
+    font-size: 1.5rem;
+    border: none;
+    background: white;
+    padding: 5px;
+    margin-bottom: 20px;
+    
+  }
+  
+  .add-btn {
+    cursor: pointer;
+    padding: 5px 8px;
+  }
+  
+  .add-btn:hover {
+    background: black;
+    color: white;
+  }
+  
+  /* Keeps bulletins aligned in container */
+  .todo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  .todo-list {
+    list-style: none;
+    min-width: 30%;
+  }
+    
+  .todo {
+    margin: 0.5rem;
+    background: white;
+    color: black;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .trashBtn, .completedBtn {
+    padding: 10px;
+    background: white;
+    border: none;
+    cursor: pointer;
+    flex: 1;
+  }
+  
+  .trashBtn {
+    background: red;
+    margin-left: 200px;
+  }
+  
+  .completedBtn {
+    background: green;
+  }
+
+  .trashBtn:hover, .completedBtn:hover {
+    background: white;
+  }
+  
+  .todo, li {
+    flex: 1;
+  }
+
+  .completedItem {
+    text-decoration: line-through;
+    opacity: 50%;
+  }
+
+  
